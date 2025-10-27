@@ -1,0 +1,10 @@
+name: is-test2025-web
+services:
+  web:
+    build:
+      context: .
+    environment:
+      - VITE_API_BASE_URL=http://localhost:3001
+    ports:
+      - "8085:8080"
+    restart: unless-stopped
